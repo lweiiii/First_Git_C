@@ -1,0 +1,9 @@
+mydb.txt
+*.ignore
+*.so
+*.class
+#windows
+*.ini
+*.Thumbs.db
+*.o
+*.exe
