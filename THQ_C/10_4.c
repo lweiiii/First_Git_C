@@ -1,3 +1,13 @@
+/*
+程序功能及要点回顾：
+功能：从键盘输入3个学生的有关数据，然后转存到磁盘文件中去[在scanf的时候要根据数据的格式来，不能再填写数字的地方填写字符串]
+要点：fread(buffer,size,count,fp);fwrite(buffer,size,count,fp)
+    buffer:表示一个地址，对fread来说是用来存放从文件读入的数据的存储区的地址；对于fwrite来说是要把此地址开始的存储区中的数据向文件输出(以上指的是起始地址)
+    size:要读写的字节数
+    count:要读写多少个数据项(每个数据项的长度size)
+    fp:FILE类型的指针
+*/
+
 #include <stdio.h>
 #define SIZE 3
 struct student_type
@@ -6,7 +16,7 @@ struct student_type
     int num;
     int age;
     char addr[15];
-}stud[SIZE];  //����ȫ�ֽṹ������stud,����10��ѧ������
+}stud[SIZE];  //定义全局结构体数组stud,包含10个学生数据
 
 void save()
     {
@@ -33,12 +43,5 @@ int main()
         return 0;
 
     }
-/*
-�����ܼ�Ҫ��عˣ�
-���ܣ��Ӽ�������10��ѧ�����й����ݣ�Ȼ��ת�浽�����ļ���ȥ
-Ҫ�㣺fread(buffer,size,count,fp);fwrite(buffer,size,count,fp)
-    buffer:��ʾһ����ַ����fread��˵��������Ŵ��ļ���������ݵĴ洢���ĵ�ַ������fwrite��˵��Ҫ�Ѵ˵�ַ��ʼ�Ĵ洢���е��������ļ����(����ָ������ʼ��ַ)
-    size:Ҫ��д���ֽ���
-    count:Ҫ��д���ٸ�������(ÿ��������ĳ���size)
-    fp:FILE���͵�ָ��
-*/
+
+
