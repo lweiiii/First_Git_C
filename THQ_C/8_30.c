@@ -1,4 +1,4 @@
-// malloc动态内存动态分配
+// malloc 靠靠靠 
 
 #include <stdio.h>
 #include <stdlib.h>
