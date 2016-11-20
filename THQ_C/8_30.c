@@ -1,4 +1,4 @@
-// malloc ¿¿¿¿¿¿ 
+// malloc  
 
 #include <stdio.h>
 #include <stdlib.h>
