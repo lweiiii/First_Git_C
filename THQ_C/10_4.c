@@ -1,4 +1,4 @@
-/*
+/* 
 程序功能及要点回顾：
 功能：从键盘输入3个学生的有关数据，然后转存到磁盘文件中去[在scanf的时候要根据数据的格式来，不能再填写数字的地方填写字符串]
 要点：fread(buffer,size,count,fp);fwrite(buffer,size,count,fp)
